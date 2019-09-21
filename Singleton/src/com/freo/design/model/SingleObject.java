@@ -12,14 +12,14 @@ package com.freo.design.model;
  */
 public class SingleObject {
 
-    //create an object of SingleObject
+    //创建一个唯一的静态实例对象
     private static SingleObject instance = new SingleObject();
 
-    //make the constructor private so that this class cannot be
+    //构造器初始化
     //instantiated
     private SingleObject(){}
 
-    //Get the only object available
+    //获取唯一对象实例的方法
     public static SingleObject getInstance(){
         return instance;
     }
